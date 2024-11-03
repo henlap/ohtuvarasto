@@ -64,6 +64,7 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(varasto.paljonko_mahtuu(), 1)
 
     def test_varastotuloste(self):
+        # testaa tulostetaanko luokka oikein
         oikea_tuloste = "saldo = 0, vielä tilaa 10"
         
         self.assertEqual(str(self.varasto), oikea_tuloste)
